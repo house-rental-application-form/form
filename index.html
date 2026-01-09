@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Application Form</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f2f2f2;
+}
+.form-box{
+width:500px;
+background:#fff;
+margin:30px auto;
+padding:25px;
+border-radius:8px;
+}
+h2{
+text-align:center;
+}
+label{
+display:block;
+margin-top:12px;
+font-weight:bold;
+}
+input, select, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+button{
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#007bff;
+color:#fff;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+background:#0056b3;
+}
+</style>
+</head>
+
+<body>
+<div class="form-box">
+<h2>Application Form</h2>
+
+<form method="POST" action="/submit" enctype="multipart/form-data">
+
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+
+<label>Email Address</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="text" name="phone" required>
+
+<label>Gender</label>
+<select name="gender" required>
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<label>Date of Birth</label>
+<input type="date" name="dob" required>
+
+<label>Nationality</label>
+<input type="text" name="nationality" required>
+
+<label>State</label>
+<input type="text" name="state" required>
+
+<label>City</label>
+<input type="text" name="city" required>
+
+<label>Residential Address</label>
+<textarea name="address" rows="3" required></textarea>
+
+<label>Occupation</label>
+<input type="text" name="occupation">
+
+<label>Marital Status</label>
+<select name="marital_status">
+<option value="">Select</option>
+<option>Single</option>
+<option>Married</option>
+</select>
+
+<label>Next of Kin Name</label>
+<input type="text" name="nok_name">
+
+<label>Next of Kin Phone</label>
+<input type="text" name="nok_phone">
+
+<label>Reason for Applying</label>
+<textarea name="reason" rows="4" required></textarea>
+
+<label>Upload ID Card</label>
+<input type="file" name="id_card" accept=".jpg,.png,.pdf" required>
+
+<label>Upload Passport Photograph</label>
+<input type="file" name="passport" accept=".jpg,.png" required>
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+</body>
+</html>

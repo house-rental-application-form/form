@@ -9,7 +9,7 @@ EMAIL_PASSWORD = "dtij stiy nwmf xrqk"
 
 @app.route("/")
 def form():
-return render_template("form.html")
+return render_template("index.html")
 
 @app.route("/submit", methods=["POST"])
 def submit():
